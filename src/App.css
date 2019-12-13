@@ -1,0 +1,32 @@
+.first{
+    background-image: url("7669754d-319e-4bb0-bb0e-bc6ce9ad6cc5.jpg");
+    margin : 0;
+    padding : 7%;
+    /* background-size: 1000px; */
+    /* height: 0%;  */
+    /* width: 400px; */
+    background-size: cover;
+}
+.f{
+    /* padding-top: 50px;
+    padding-right: 700px;
+    padding-left: 160px;
+     padding-bottom: 890px;   */
+      width: 95%;  
+     margin-top: 0%;
+     margin-left: 9%;
+     height: 40%;
+     border-radius: 10%;
+}
+.def{
+    margin-left: 15%;
+
+}
+ .gr{
+    margin-right: 20%;
+    margin-top: 3%;
+    /* margin-left: 2%; */
+} 
+.app{
+    display: flex;
+}

@@ -1,0 +1,12 @@
+.ne{
+    display: grid;
+     grid-template-columns: 33.33% 33.33% 33.33%;
+  /* grid-auto-rows: 500px; */
+ /* background-color: black; */
+  width:100%;
+  margin-top: 50px;
+
+  
+  /* margin-left: 60px; */
+
+} 

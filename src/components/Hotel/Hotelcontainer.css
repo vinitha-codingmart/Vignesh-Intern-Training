@@ -1,0 +1,10 @@
+.ho{
+    display: grid;
+     grid-template-columns: 25% 25% 25% 25%;
+  /* grid-auto-rows: 500px; */
+ /* background-color: black; */
+  width:100%;
+  margin-top: 25px;
+
+
+}
