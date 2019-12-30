@@ -12,7 +12,7 @@ class Policy1 extends Component {
                 <p style = {{ fontSize:"16px",marginTop:"8px",color:"#7A7B7F"}}> {this.props.line2}</p>
                 <p style = {{ fontSize:"16px",marginTop:"8px",color:"#7A7B7F"}}> {this.props.line3}</p>
                 <p style = {{  fontSize:"16px",marginTop:"8px",color:"#7A7B7F"}}> {this.props.line4}</p>
-                <p style = {{  fontSize:"16px",marginTop:"8px",color:"#7A7B7F"}}> {this.props.line5}</p>
+                <p style = {{  fontSize:"16px",marginTop:"8px",color:"#7A7B7F"}}> {this.props.line5}    <button style = {{backgroundColor:"#166A70",color:"white",borderRadius:"5px",borderBlockColor:"#166A70" ,width:"35px",display : this.props.display}}> New</button> </p>
                 <p style = {{   fontSize:"16px",marginTop:"8px",color:"#7A7B7F"}}> {this.props.line6}</p>
 
             </div> 

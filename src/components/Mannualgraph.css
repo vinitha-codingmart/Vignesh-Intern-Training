@@ -1,0 +1,19 @@
+.grap{
+    position: relative;
+    max-width: 700px;
+    height: 400px;
+    /* background:#ddd; */
+    margin-left:5%;
+    margin-bottom: 10%;
+    display: flex;
+
+}
+.linegraph{
+    /* background: red; */
+     background:#ddd; 
+
+    position: relative;
+    width: 90%;
+    height: 100%;
+
+}

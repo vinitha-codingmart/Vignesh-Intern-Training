@@ -1,0 +1,27 @@
+.admi{
+    /* background-image: url("362619.jpg"); */
+    /* background-image: s; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     height: 850px;
+     color: black;
+     
+
+}
+.r1{
+    clear: both;
+    display :grid,
+}
+
+.cc1{
+    float: left;
+    width: 50%;
+    /* padding-right: 50%; */
+
+
+} 
+.cc2{
+    float: left;
+    width: 50%;
+}  

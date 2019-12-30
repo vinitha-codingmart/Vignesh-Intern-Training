@@ -34,7 +34,7 @@ class Search extends Component {
                        <h1 style={{fontSize:"35px"}}>Book Homes,Hotel,and
                        more on airbnb</h1>
                         <p style ={{fontSize:"12px",marginTop:"15px"}}>WHERE</p>
-                       <input type="text"name="where" value="Anywhere" style ={{fontSize:"16px",marginTop:"10px", padding:"10px", width:"93%"}}/>
+                       <input type="text"name="where" value="" style ={{fontSize:"16px",marginTop:"10px", padding:"10px", width:"93%"}}/>
               
             <div className= "row">
               <div className = "col1">

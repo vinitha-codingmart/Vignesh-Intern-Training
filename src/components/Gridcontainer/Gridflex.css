@@ -1,4 +1,10 @@
-.c1{
+ .c1{
     width :33%;
-
+    display: inline-block; 
+    /* flex-wrap: wrap; */
+   
 }
+.logo{
+    display: flex;
+    margin-top: 5%;
+  }

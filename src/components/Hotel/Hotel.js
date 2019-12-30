@@ -10,7 +10,8 @@ class Hotel extends Component {
     render() { 
         return (
             <div>
-                <img className = "hi" src={this.props.img}/>
+                {console.log("Image",this.props.img)}
+                <img className = "hi" src={`data:image/jpeg;base64,${this.props.img}`}/>
                 <p style={{color:this.props.color}}>{this.props.head}</p>
                 <p style={{fontSize:"18px" ,marginRigth:"0px" ,lineHeight:1.2}}>{this.props.content}</p>
                 <p style={{marginTop:"5px"}}>{this.props.price}</p>
@@ -21,3 +22,13 @@ class Hotel extends Component {
 }
  
 export default Hotel;
+
+
+
+
+
+
+
+
+
+

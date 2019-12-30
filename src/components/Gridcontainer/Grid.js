@@ -9,13 +9,15 @@ class  Grid extends Component {
     render() { 
         return (  
             <div className = "c1">
-                    <img className = "g1" src={this.props.src}/>
+                    <img className = "g1" src={`data:image/jpeg;base64,${this.props.src}`} />
+                                        
+                                        
                     <Star  size = "140%"/>
                     <br/>
                     
                     <p style ={{fontSize:"14px",marginTop : "28px",color:"#6F595A"}}>{this.props.text} </p>
                          <div className="logo">
-                            <img className = "im" src={this.props.logo}/>
+                            <img className = "im" src={`data:image/jpeg;base64,${this.props.logo}`}/>
                     
                                <p style = {{marginTop:"12px",marginLeft:"15px"}}>{this.props.name}<br/>
                                 {this.props.city}</p>

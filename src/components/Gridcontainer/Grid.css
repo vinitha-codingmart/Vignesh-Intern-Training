@@ -1,38 +1,17 @@
-@import '/src/components/Style.scss';
-.n{
-    display: flex;
-    flex-wrap: wrap;
-     /* grid-template-columns: 33.33% 33.33% 33.33%; */
-  /* grid-auto-rows: 500px; */
-    width:100%;
-    /* background-color:$searchbgcolor;
-    color:$color;
-   */
-   overflow-x: scroll;
-   scroll-snap-type: x proximity;
-
-} 
- .g1{
-   height: 70%;
-   width: 96%;
- } 
- /* .g2{
-  height: 220px;
-  width: 96%
-
-}
-.g3{
-  height: 220px;
-  width: 96%
-
-} */
-.im{
-  border-radius: 50%;
-  /* margin-top: 5%; */
-  height: 52px;
-  width: 52px;
-}
-.logo{
-  display: flex;
-  margin-top: 5%;
-}
+.nnnnm{
+     /* display: inline-block; */
+   }
+   .g1{
+    height: 70%;
+    width: 96%;
+  } 
+  
+ .im{
+   border-radius: 50%;
+   height: 52px;
+   width: 52px;
+ }
+ 
+    
+ 
+ 
