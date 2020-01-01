@@ -8,9 +8,9 @@ class Graphline extends Component {
 
      Line=()=>{
          console.log(this.props.left)
-        return (
-            <div className = "line" style={{left:`${this.props.left}%`}}/>
-          );
+            return (
+                 <div className = "line" style={{left:`${this.props.left}%`}}/>
+            );
         }
     render() { 
         return(
