@@ -33,7 +33,7 @@ class Admincontainer extends Component {
           <Link to="/" style={{ textDecoration: "none" }}>
             <div>
               <svg
-                class="svg-icon"
+                className="svg-icon"
                 viewBox="0 0 20 20"
                 style={{
                   width: "40px",
@@ -48,11 +48,11 @@ class Admincontainer extends Component {
             </div>
           </Link>
 
-          <Link to="/record" style={{ textDecoration: "none" }} exact>
+          <Link to="/record" style={{ textDecoration: "none" }} >
             <span>
               <div>
                 <svg
-                  class="svg-icon"
+                  className="svg-icon"
                   viewBox="0 0 20 20"
                   style={{
                     width: "20px",

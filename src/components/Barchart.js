@@ -59,6 +59,12 @@ class Barchart extends Component {
     this.getarray();
   }
 
+
+
+  newfun(){
+
+  }
+
   componentDidMount() {
     axios.post("http://localhost:8081/barchart")
     .then(res => {
@@ -71,12 +77,37 @@ class Barchart extends Component {
     });
   }
   render() {
+    let cd =[]
+    let co = []
+
+    for(let i = 0;i<this.props.new.data.length;i++)
+    {
+       cd.push(this.props.new.data[i].creationtime)
+       console.log( "haiii",cd)
+       co.push(this.props.new.data[i].count)
+    }
+    let a = {
+      labels: cd,
+      datasets: [
+        {
+          label: "Week Dataset",
+          // backgroundColor: 'rgba(255,99,132,0.2)',
+          backgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"],
+          borderColor: "rgba(255,99,132,1)",
+          borderWidth: 1,
+          hoverBackgroundColor: "rgba(255,99,132,0.4)",
+          hoverBorderColor: "rgba(255,99,132,1)",
+          data: co
+        }
+      ]
+    };
+ 
     return (
       <div>
         <div style={{ display: "flex" }}>
           <div style={{ height: "300px", width: "30%" }}>
             <Bar
-              data={this.state.newdata}
+              data={a}
               
               options={{
                 maintainAspectRatio: false
@@ -99,3 +130,4 @@ const mapStateToProps = state => {
 };
 
 export default connect(mapStateToProps, null)(Barchart);
+    
