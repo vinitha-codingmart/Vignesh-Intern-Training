@@ -24,7 +24,7 @@ class Main extends Component {
     return (
       <div className="main">
         <div className="first">
-          <Link to="/admin" exact>
+          <Link to="/Newadmin" exact>
             <span>admin</span>
           </Link>
           <div className="f">

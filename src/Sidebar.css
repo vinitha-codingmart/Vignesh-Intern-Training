@@ -1,0 +1,41 @@
+.hmbrgr {
+    /* display: block; */
+    /* position: fixed; */
+    top:2em;left:1em;
+    z-index: 2;
+    width: 48px;
+    /* width: "10px"; */
+    height: 36px;
+    /* height: 2.25em; */
+    /* cursor: pointer; */
+    /* padding: 0; */
+    background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='48' height='36' viewBox='0 0 48 36' fill='rgb(28,28,28)'%3E%3Crect x='16' y='12' width='16' height='2' /%3E%3Crect x='16' y='17' width='16' height='2' /%3E%3Crect x='16' y='22' width='16' height='2' /%3E%3C/svg>");
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 48 36' fill='rgb(20,20,20)'><rect x='16' y='12' width='16' height='2' /><rect x='16' y='17' width='16' height='2' /><rect x='16' y='22' width='16' height='2' /></svg>"); */
+    /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 48 36' fill='rgb(20,20,20)'%3E%3Crect x='16' y='12' width='16' height='2' /%3E%3Crect x='16' y='17' width='16' height='2'/%3E%3Crect x='16' y='22' width='16' height='2' /3E%3C/svg%3E"); */
+    /* background-size: contain; */
+    font-size: 1em;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.25);
+  }
+  /* .menu-text {
+    position: fixed;
+    font-size: 1em;
+    top: .75em;
+    padding: 0 .125em;
+    color: #111;
+    display: block;
+  } */
+  .hmbrgr:hover {
+    background-color: #ccc;
+    border-color: #bbb;
+    box-shadow: 0 0 1px rgba(0,0,0,.25),inset 0 0 3px rgba(0,0,0,.25);
+  }
+  .hmbrgr:hover .menu-text {
+    color: crimson;
+  }
+  

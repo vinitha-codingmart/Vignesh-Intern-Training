@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { Link, Route, Switch } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
@@ -14,8 +14,14 @@ import main from "./Main";
 // import Policyhead from './components/Terms/Policyhead';
 // import Footer from './components/footer/Footer';
 import admin from "./components/Admincontainer";
-import record from "./components/RecordContainer";
+import Record from "./components/RecordContainer";
 // import Adminpage from './components/Adminpage';
+import Newadmin from "./Newadmin"
+import Navbar from './Navbar'
+import Records from "./components/Records";
+import Hotelrecord from './components/Hotelrecord'
+import reviewerrecord from './Reviewer table'
+import Reviewertable from "./Reviewer table";
 class App extends Component {
   constructor(props) {
     super(props);
@@ -29,7 +35,35 @@ class App extends Component {
         <Router>
           <Route path="/" component={main} exact />
           <Route path="/admin" component={admin} exact />
-          <Route path="/record" component={record} exact />
+          <Route path="/record" render={
+            props =>
+            <Fragment>
+              <Navbar/>
+              {/* <Record/> */}
+              <Hotelrecord/>
+            </Fragment>
+          } exact />
+         
+          <Route path="/newadmin" render={
+            props =>
+            <Fragment>
+              <Navbar/>
+              <Newadmin/>
+            </Fragment>
+          } exact />
+
+
+
+<Route path="/reviewerrecord" render={
+            props =>
+            <Fragment>
+              <Navbar/>
+              {/* <Record/> */}
+              <Reviewertable/>
+            </Fragment>
+          } exact />
+         
+         
           <Switch>
           </Switch>
         </Router>

@@ -10,7 +10,7 @@ class Hotel extends Component {
   render() {
     return (
       <div>
-        {console.log("Image", this.props.img)}
+        {/* {console.log("Image", this.props.img)} */}
         <img className="hi" src={`data:image/jpeg;base64,${this.props.img}`} />
         <p style={{ color: this.props.color }}>{this.props.head}</p>
         <p style={{ fontSize: "18px", marginRigth: "0px", lineHeight: 1.2 }}>

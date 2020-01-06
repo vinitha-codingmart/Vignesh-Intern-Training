@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import "./Admin.css";
-// import Crud from "./Crud";
-// import { Button } from "react-bootstrap";
-// import Formimage from "./Formimage"
+import Error from "./Error";
+
+
 import { connect } from "react-redux";
-// import Action from "./Action"
 import { getdat, getda, getd } from "./Action";
 const axios = require("axios");
 
@@ -29,6 +28,7 @@ class Adminpage extends Component {
       rname: "",
       rcity: "",
 
+
       profileImg: "",
       first: "",
 
@@ -42,6 +42,7 @@ class Adminpage extends Component {
 
       referencee:""
     };
+
   }
 
   // onFileChange(e) {
@@ -243,17 +244,21 @@ console.log(date,"=",this.state.referencee.data[i].creationtime.substring(0,10))
 
       //this.getarray()
     });
+
+
   }
 
   render() {
+    const reguxname = /^[a-zA-Z]+((['. ][a-zA-Z ])?[a-zA-Z]*)*$/
+
     return (
-      <div className="admi">
+      <div className="admi"
+      
+      style={{
+        overflow:"hidden"
+      }}>
         {/* file upload */}
-        <div className="container" style={{ margin: "3%" }}>
-          <div className="row" style={{ width: "100%" }}>
             <form onSubmit={this.onSubmit} enctype="multipart/form-data">
-              <div className="r1">
-                <div className="cc1">
                   <h3 style={{ marginTop: "20px" }}>SRC:</h3>
 
                   <input
@@ -285,6 +290,7 @@ console.log(date,"=",this.state.referencee.data[i].creationtime.substring(0,10))
                     value={this.state.rtext}
                     onChange={this.updatertext}
                   />
+                   {/* {(!reguxname.test(this.state.rtext)&& this.state.rtext !== null) ? <Error type="name" /> : null} */}
 
                   <h3 style={{ marginTop: "20px" }}> USER PROFILE: </h3>
                   <input
@@ -300,9 +306,9 @@ console.log(date,"=",this.state.referencee.data[i].creationtime.substring(0,10))
                     value={this.rlogo}
                     onChange={this.updaterlogo}
                   />
-                </div>
+                
 
-                <div className="cc2">
+                
                   <h3 style={{ marginTop: "20px" }}> NAME:</h3>
                   <input
                     style={{
@@ -332,8 +338,8 @@ console.log(date,"=",this.state.referencee.data[i].creationtime.substring(0,10))
                     value={this.state.rcity}
                     onChange={this.updatercity}
                   />
-                </div>
-              </div>
+              
+        
               <br />
 
               <div className="form-group">
@@ -342,9 +348,13 @@ console.log(date,"=",this.state.referencee.data[i].creationtime.substring(0,10))
                 </button>
                 {/* {console.log("redux",this.props.getdat())} */}
               </div>
+
+              
             </form>
-          </div>
-        </div>
+
+
+
+          
       </div>
     );
   }

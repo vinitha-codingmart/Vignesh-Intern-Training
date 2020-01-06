@@ -48,7 +48,7 @@ class Admincontainer extends Component {
             </div>
           </Link>
 
-          <Link to="/record" style={{ textDecoration: "none" }} >
+          <Link to="/Newadmin" style={{ textDecoration: "none" }} >
             <span>
               <div>
                 <svg
